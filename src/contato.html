@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img href src="./estudo-de-caso/image/logo-empresa.png" weidht="200px" alt="logo empresa">
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href=home.html>Home</a><br>
+                    </li>
+                    <li>
+                        <a href=contato.html>Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1>Formulario de Contato</h1>
+                <p>Preencha os dados abaixo e envie sua mensagem de contato</p>
+
+                <fieldset>
+                    <legend>
+                        <h5>Dados de contato</h5>
+                    </legend>
+                    <form id="frmInscrição" action="contato.php" method="POST">
+                        <label>Nome:</label><br>
+                        <input type="text" required id="txtNome" maxlength="100" size="50"><br><br>
+
+                        <label>Sexo:</label><br>
+                        <input type="radio" name="rdoSexo" value="M" value="F" required="required">
+                        <label>Masculino</label>
+                        <input type="radio" name="rdoSexo" value="F" required="required">
+                        <label>Feminino</label><br><br>
+
+                        <label>Estado:</label><br>
+                        <select id="cbxEstado" required="required">
+                            <option value="">Selecione</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </select><br><br>
+                        <label>Cidade</label> <br>
+                        <select id="cbxCidade" required="required">
+                            <option value="">Selecione</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Belo Horizonte</option>
+                        </select><br><br>
+                        <Label>Celular:</Label>
+                        <input type="tel" id="txtCelular" placeholder="Digite seu telefone" required="required"
+                            maxlength="15" size="15"><br><br>
+                        <label>E-mail:</label>
+                        <input type="email" id="txtEmail" placeholder="Digite seu e-mail" required="required"
+                            maxlength="100" size="50"><br><br>
+                        <label for="Áreas de interesse"></label>
+
+                        <label>HTML</label><br><br>
+                        <input type="checkbox" value="Javascript" name="chkAreasInteresse">
+                        <label>CSS</label><br><br>
+                        <input type="checkbox" value="HTML" name="chkAreasInteresse">
+                        <label>Javascript</label><br><br>
+                        <input type="checkbox" value="CSS" name="chkAreasInteresse">
+                        <label>Mensagem:</label><br>
+                        <textarea id="txtMensagem" placeholder="Digite sua mensagem" required="required" maxlength="500"
+                            size="50"></textarea><br><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </fieldset>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/eddiefram" target="_blank">
+                    <img href src="./estudo-de-caso/image/facebook.png" weidht="25px" alt="logo empresa">
+            </li>
+            <li>
+                <a href="https://www.instagram.com/eddiefram/" target="_blank">
+                    <img href src="./estudo-de-caso/image/instagram.png" weidht="25px" alt="logo empresa">
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/edframguerra/" target="_blank">
+                    <img href link src="./estudo-de-caso/image/linkedin.png" weidht="25px" alt="logo empresa">
+        </ul>
+    </footer>
+</body>
+
+</html>
